@@ -1,6 +1,6 @@
 // page.js
 import { useEffect, useRef } from 'react';
-
+import ChatModal from './components/ChatModal';
 export default function HomePage() {
     const viewer = useRef(null);
   
@@ -23,6 +23,7 @@ export default function HomePage() {
     return (
       <div className='MyComponent'>
         <div className='webviewer' ref={viewer} style={{ height: '100vh' }}></div>
+        <ChatModal/>
       </div>
     );
   }

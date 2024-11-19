@@ -5,7 +5,7 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './NavBar';
 import { useRouter } from 'next/router';
-
+import ChatModal from './ChatModal';
 const Documents = () => {
     const [documents, setDocuments] = useState([]);
     const [selectedDocument, setSelectedDocument] = useState(null);
@@ -89,6 +89,8 @@ const Documents = () => {
                     </div>
                 </div>
             </div>
+
+            <ChatModal/>
 
             {showModal && (
                 <div className="modal" tabIndex="-1" role="dialog" style={{
