@@ -1,5 +1,4 @@
-
-
+//pages/index.js
 import React from 'react'
 import Documents from './components/Documents'
 
