@@ -58,7 +58,7 @@ const ConfigureModal = () => {
             right: '20px',  // Positioned to the right of the page
             zIndex: 1001,   // Just above the button
             width: '300px', // Adjust width of the modal
-            height: '250px', // Adjust height of the modal
+            height: '300px', // Adjust height of the modal
             overflowY: 'auto', // Ensure it's scrollable if content overflows
             borderRadius: '8px', // Optional for rounded corners
             boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', // Optional for a subtle shadow

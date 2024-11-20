@@ -5,7 +5,6 @@ import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './NavBar';
 import { useRouter } from 'next/router';
-import ChatModal from './ChatModal'; //this component need to be refractored
 
 const Documents = () => {
     const [documents, setDocuments] = useState([]);
@@ -82,7 +81,7 @@ const Documents = () => {
                                                     handleDeleteDocument(document.id)}>
                                                 Delete
                                             </button>
-                                            <button className="btn btn-primary"
+                                            <button className="btn btn-primary ms-2"
                                                 onClick={handleNavigate}>
                                                 Configure
                                             </button>
@@ -95,7 +94,7 @@ const Documents = () => {
                 </div>
             </div>
 
-            <ChatModal/>
+       
 
             {showModal && (
                 <div className="modal" tabIndex="-1" role="dialog" style={{
