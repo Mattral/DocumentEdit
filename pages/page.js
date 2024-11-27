@@ -9,7 +9,8 @@ export default function HomePage() {
         WebViewer(
           {
             path: '/webviewer/lib',
-            enableOfficeEditing:true,//initialDoc: '/files/PDFTRON_about.pdf',
+            enableOfficeEditing:true,//
+            initialDoc: '/files/example.docx',
             licenseKey: 'demo:1732014365003:7ef3c2a003000000002c9f3512bce4f73972cfbb7657c2c3a7c784a22f'  // sign up to get a free trial key at https://dev.apryse.com
           },
           viewer.current
